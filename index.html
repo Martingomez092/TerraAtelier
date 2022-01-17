@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Terra Atelier - Inicio</title>
 </head>
 
@@ -14,16 +15,33 @@
 
     <!--Navbar-->
 
-    <header class="navbar">
-        <img class="logo" src="img/logo.png" alt="logoterra">
-        <ul class="ul-navbar">
-            <li class="li-navbar"><a href="index.html"> Inicio</a></li>
-            <li class="li-navbar"><a href="productos.html">Productos</a></li>
-            <li class="li-navbar"><a href="contacto.html">Contacto</a></li>
-            <li class="li-navbar"><a href="quienes-somos.html">Quienes Somos</a></li>
-            <li class="li-navbar"><a href="faqs.html">FAQS</a></li> 
-        </ul>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png" alt="logoterra"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quienes-somos.html">Quienes Somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="faqs.html">FAQS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
     <!--Parallax 1-->
 
@@ -34,39 +52,50 @@
         </div> 
     </article>   
 
-    <!--Boxes-->
+      <!--Cards-->
 
-    <section>
-        <div class="box-flex">
-            <img src="img/box1.jpg" alt="imageplant">
-            <div class="box-icon-text">
-                <div class="icon">
+      <section>
+      <div class="card mb-3" >
+        <div class="row g-0">
+          <div class="col-md-5">
+            <img src="img/box1.jpg" alt="imageplant" class="img-fluid rounded-start">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
                 <img src="img/Group 8.svg" alt="iconplanta">
-                </div>
-                <p class="box-text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consectetur, nesciunt tempora minus suscipit aut eveniet, libero pariatur omnis, officia asperiores corrupti vel quod. At quidem fugit quod consequatur. Eaque.
-                </p>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consectetur, nesciunt tempora minus suscipit aut eveniet, libero pariatur omnis, officia asperiores corrupti vel quod. At quidem fugit quod consequatur. Eaque.</p>
+              
             </div>
+          </div>
         </div>
-        <div class="box-flex">
-            <div class="box-icon-text">
-                <div class="icon-2">
-                <img src="img/mdi_seed-outline.svg" alt="iconoseed">
-                </div>
-                <p class="box-text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consectetur, nesciunt tempora minus suscipit aut eveniet, libero pariatur omnis, officia asperiores corrupti vel quod. At quidem fugit quod consequatur. Eaque.
-                </p>
+      </div>
+
+      <div class="card mb-3" >
+        <div class="row g-0">
+          <div class="col-md-7">
+            <img src="img/mdi_seed-outline.svg" alt="iconoseed">
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consectetur, nesciunt tempora minus suscipit aut eveniet, libero pariatur omnis, officia asperiores corrupti vel quod. At quidem fugit quod consequatur. Eaque.</p>
+          </div>
+          <div class="col-md-5" >
+            <div class="card-body p-0">
+                <img src="img/box1.jpg" alt="imageplant" class="img-fluid rounded-end">     
             </div>
-            <img src="img/box1.jpg" alt="imageplant">
+          </div>
         </div>
-        <div class="box-flex">
-            <img src="img/box1.jpg" alt="imageplant">
-            <div class="box-icon-text">
-                <div class="icon">
-                <img src="img/Group 8.svg" alt="iconplant">
-                </div>
-                <p class="box-text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consectetur, nesciunt tempora minus suscipit aut eveniet, libero pariatur omnis, officia asperiores corrupti vel quod. At quidem fugit quod consequatur. Eaque.
-                </p>
+      </div>
+     <div class="card mb-5" >
+        <div class="row g-0">
+          <div class="col-md-5">
+            <img src="img/box1.jpg" alt="imageplant" class="img-fluid rounded-start">
+          </div>
+          <div class="col-md-7">
+            <div class="card-body">
+                <img src="img/Group 8.svg" alt="iconplanta">
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consectetur, nesciunt tempora minus suscipit aut eveniet, libero pariatur omnis, officia asperiores corrupti vel quod. At quidem fugit quod consequatur. Eaque.</p>  
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!--parallax 2-->
@@ -107,6 +136,7 @@
             </a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
