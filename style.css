@@ -5,17 +5,18 @@
 }
 
 body {
-  background-color: #fafafa;
+  background-color: #fff;
 }
 
 section {
   margin-left: 10rem;
   margin-right: 10rem;
-  background-color: #fafafa;
+  background-color: #fff;
 }
 
+/* navbar */
+
 .navbar {
-  position: fixed;
   width: 100%;  
   background-color: #2ac9ad;
   display: flex;
@@ -26,10 +27,41 @@ section {
   
 }
 
+.navbar-collapse {
+
+  display: flex;
+  flex-basis: auto;
+  justify-content: flex-end;
+  margin-right: 10rem;
+
+}
 
 .logo {
   margin-left: 10rem;
-  
+}
+
+@media only screen and (max-width: 991px) {
+  .logo {
+    margin-left:5rem;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    margin-left:1rem;
+}
+}
+
+@media only screen and (max-width: 991px) {
+  .navbar-toggler {
+    margin-right:5rem;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-toggler {
+    margin-right:1rem;
+}
 }
 
 .ul-navbar {
@@ -54,13 +86,23 @@ a:active {
   color: #fafafa;
 }
 
+
+/* hero */
+
 .section1 {
   background-image: url("img/hero.png");
   background-repeat: none;
   background-position: center;
   background-size: cover;
-  height: 100vh;
-  margin-bottom: 8rem;
+  height: 60vh;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 10rem;
 }
 
 h1 {
@@ -69,9 +111,11 @@ h1 {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 6rem;
   margin-left: 10rem;
-  padding-top: 18rem;
-  padding-right: 6rem;
+  margin-right: 10rem;
+  margin-bottom: 10rem;
 }
+
+
 
 .btn-hero {
   background-color: #2ac9ad;
@@ -81,9 +125,77 @@ h1 {
   color: #fafafa;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-left: 10rem;
-  margin-top: 8rem;
+  margin-right: 10rem;
+  margin-top: 4rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .hero {
+    padding-top: 8rem;
+    
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    padding-top: 8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+}
+
+@media only screen and (max-width: 991px) {
+  h1 {
+    margin-left:5rem;
+}
+}
+
+@media only screen and (max-width: 991px) {
+  .btn-hero {
+    margin-left:5rem;
+    margin-right: 1rem;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    margin-left:1rem;
+    margin-right:1rem;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .btn-hero {
+    margin-left:1rem;
+    margin-right: 1rem;
+}
+}
+
+@media only screen and (max-width: 440px) {
+  .btn-hero {
+    font-size: 1rem;
+}
+}
+
+@media only screen and (max-width: 335px) {
+  .btn-hero {
+    margin-left: 0rem;
+    margin-right: 0rem;
+}
+}
+
+/* card */
+
+.card-text {
+  margin:2rem
 }
 
 .box-flex {
@@ -103,9 +215,63 @@ h1 {
 }
 
 .icon {
-  padding-top: 8rem;
-  padding-left: 3rem;
-  padding-bottom: 4rem;
+  padding-top:6rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 1375px) {
+  .icon {
+    padding-top: 3rem;
+}
+}
+
+@media only screen and (max-width: 1235px) {
+  .icon {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+}
+
+@media only screen and (max-width: 1167px) {
+  .icon {
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+}
+}
+
+@media only screen and (max-width: 1093px) {
+  .icon {
+    display: none;
+}
+}
+
+@media only screen and (max-width: 1061px) {
+  .card-text {
+    margin:1rem;
+}
+}
+
+@media only screen and (min-width: 775px) and (max-width: 1061px) {
+  .section-width {
+    margin-left:12rem;
+    margin-right:12rem;
+}
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .section-width {
+    margin-left:1rem;
+    margin-right:1rem;
+}
+}
+
+@media only screen and (max-width: 410px) {
+  .image-card {
+    border-radius: round;
+}
 }
 
 .box-text-1 {
@@ -150,17 +316,7 @@ h1 {
   height: auto;
 }
 
-.box-text-3 {
-  padding: 4rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #131515;
-  font-size: 2.5rem;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  color: #fafafa;
-}
+
 
 .box-left {
   display: flex;
@@ -179,6 +335,8 @@ h1 {
   height: auto;
 }
 
+/* footer */
+
 footer {
   background-color: #131515;
   padding-right: 10rem;
@@ -193,7 +351,7 @@ footer {
 
 .li-footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   margin-right: 2rem;
   margin-left: 2rem;
@@ -205,6 +363,33 @@ footer {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
+}
+
+footer hr {
+  height: 1px;
+  background-color: whitesmoke;
+}
+
+@media only screen and (max-width: 992px) {
+  .li-footer {
+    margin:0rem;
+}
+}
+
+@media only screen and (max-width: 700px) {
+  .ul-footer {
+    flex-direction: column;
+    padding-left: 0%;
+}
+}
+
+@media only screen and (max-width: 700px) {
+  .footer-responsive {
+    margin-left: 0rem;
+    margin-right: 0rem;
+    padding-left: 0px;
+    padding-right: 0px;
+}
 }
 
 .redes {
@@ -222,6 +407,11 @@ footer {
 
 .section1.parallax {
     background-attachment: fixed;
+}
+
+iframe {
+  width:100%; 
+  height:100%;
 }
 
 .box-map {
@@ -286,10 +476,64 @@ input {
     
 }
 
-.img-message {
-  width: 10vw;
-  padding-top: 2rem;
+.message {
+  margin:2rem;
+  margin-top: 0rem;
 }
+
+@media only screen and (max-width: 1466px) {
+  .message {
+    font-size: x-large;
+}
+}
+@media only screen and (max-width: 1466px) {
+  .img-message {
+    width: 20vw;
+}
+}
+
+@media only screen and (max-width: 1212px) {
+  .message {
+    display: none;
+}
+}
+
+.img-message {
+  width: 15vw;
+}
+
+@media only screen and (max-width: 1212px) {
+  .img-message {
+    width: 25vw;
+}
+}
+
+@media only screen and (max-width: 992px) {
+  .responsive-message {
+    margin-left: 5rem ;
+    margin-right: 5rem ;
+}
+}
+
+@media only screen and (max-width: 824px) {
+  .responsive-message {
+    margin-left: 1rem ;
+    margin-right: 1rem ;
+}
+}
+
+@media only screen and (max-width: 824px) {
+  .inbox-right {
+    display: none;
+}
+}
+
+@media only screen and (max-width: 824px) {
+  .inbox-left {
+    width: 100%;
+}
+}
+
 
 .inbox-btn { 
     display: flex;
@@ -308,6 +552,26 @@ input {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.responsive-map {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  
+}
+
+@media only screen and (max-width: 992px) {
+  .responsive-map {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+}
+
+@media only screen and (max-width: 992px) {
+  .responsive-map {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+}
+
 .box-map-left { 
   display: flex;
   flex-direction: column;
@@ -315,21 +579,28 @@ input {
   align-items: flex-end;
   background-color: #2ac9ad;
   color: #fafafa;
-  width: 50%;
-  background-size: fill no-repeat;
-  background-position: center;
-  height: auto;
+  width: 100%;
   padding: 2rem;
+}
+
+div .col-6 {
+  padding-left: 0rem;
+  padding-right: 0rem;
 
 }
-.box-map-right { 
+
+ .box-map-right { 
   display: flex;
   background-color: black;
-  width: 50%;
+  width: 100%;
   background-size: fill no-repeat;
   background-position: center;
   height: auto;
+}
 
+.flex-row {
+  display: flex;
+  flex-direction: row;
 }
 
 .btn-inbox {
@@ -349,7 +620,8 @@ input {
 }
 
 .text-map {
-
+    display: flex;
+    justify-content: flex-end;
     padding-bottom: 2rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2rem;
@@ -357,19 +629,54 @@ input {
 
 }
 
-.text-map-bold {
+@media only screen and (max-width: 1185px) {
+  .text-map {
+    width: 100%;
+    font-size: 1.5rem;
+}
+}
 
-    padding-bottom: 2rem;
+
+
+.text-map-bold {
+    padding-top: 6rem;
+    padding-bottom: 1rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 2rem;
     text-align: right;
     font-weight: bold;
-
 }
+
+@media only screen and (max-width: 420px) {
+  .text-map-bold {
+    font-size: 1.5rem;
+}
+}
+
+@media only screen and (max-width: 420px) {
+  .box-map-left {
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+}
+
+@media only screen and (max-width: 420px) {
+  .text-map {
+    justify-content: center;
+}
+}
+
+
+
+
+
+
+/* parallax 2  */
 
 .section2 {
   background-image: url("img/hero.png");
-  background-repeat: none;
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 80vh;
@@ -411,19 +718,90 @@ input {
   height: 50vh;
 }
 
-.carousel {
+.box-text-3 {
+  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #131515;
+  font-size: 2.3rem;
+  text-align: center;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-image: url(img/hero.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 50vh;
-  padding-top: 7rem;
-  font-size: 10rem;
   color: #fafafa;
+}
+
+@media only screen and (max-width: 1293px) {
+  .box-text-3 {
+    font-size: 2rem;
+}
+}
+
+@media only screen and (max-width: 1093px) {
+  .box-right-pie {
+    display: none;
+
+}
+}
+
+@media only screen and (max-width: 1093px) {
+  .box-left-pie {
+    width:100%;
+
+}
+}
+
+@media only screen and (max-width: 1093px) {
+  .section2 {
+    height:50vh;
+
+}
+}
+
+@media only screen and (max-width: 740px) {
+  .box-flex-pie {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .box-flex-pie {
+    margin:1rem;
+}
+}
+
+@media only screen and (max-width: 422px) {
+  .box-text-3 {
+    font-size: 1.7rem;
+}
+}
+
+@media only screen and (max-width: 360px) {
+  .box-text-3 {
+    font-size: 1.5rem;
+}
+}
+
+@media only screen and (max-width: 1200px) {
+.responsive-market {
+margin-left: 1rem;
+margin-right: 1rem;
+}
+}
+
+@media only screen and (max-width: 800px) {
+  aside {
+  display: none;
+  }
+  }
+
+.carousel-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h3 {
+font-size: larger;
+
 }
 
 .catalogo {
@@ -503,6 +881,13 @@ input {
 .quienes {
   display: flex;
   flex-direction: row;
+  margin-right: 10rem;
+  margin-left: 10rem;
+}
+
+.responsive-quienes {
+  margin-right: 10rem;
+  margin-left: 10rem;
 }
 
 .quienes-texto {
@@ -512,13 +897,76 @@ input {
   width: 50vw
 }
 
-.quienes-img {
-  display: flex;
-  flex-direction: column;
-  margin-right: 0rem;
-  width: 30vw;
-  border-radius: 20rem;
+.text-quienes {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  padding-top: 1rem;
+  margin-right: 4rem;
 }
+
+@media only screen and (max-width: 1420px) {
+  .text-quienes {
+  margin-right: 1rem;
+  }
+  }
+
+ 
+
+.quienes-img {
+  margin-right: 0rem;
+  border-radius: 60rem;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+@media only screen and (max-width: 1200px) {
+  .quienes-img {
+  border-radius: 0rem;
+  width: 700px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  }
+  }
+
+  @media only screen and (max-width: 948px) {
+    .quienes-img {
+    border-radius: 0rem;
+    width: 500px;
+    padding: 0rem;
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+    }
+  }
+
+  @media only screen and (max-width: 745px) {
+      .responsive-quienes {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      }
+  }
+
+  @media only screen and (max-width: 563px) {
+        .quienes-img {
+          width: 400px;
+          }
+          }
+  
+          @media only screen and (max-width: 438px) {
+            .quienes-img {
+              width: 300px;
+              }
+            }
+
+              @media only screen and (max-width: 378px) {
+                .quienes-img {
+                  width: 250px;
+                  }
+                }
 
 .grid {
   display: grid;
@@ -528,6 +976,30 @@ input {
 
 
 }
+
+@media only screen and (max-width: 1672px) {
+  .grid {
+  grid-template-columns: repeat(3,1fr)
+  }
+  }
+
+  @media only screen and (max-width: 1405px) {
+    .grid {
+    grid-template-columns: repeat(2,1fr)
+    }
+    }
+
+    @media only screen and (max-width: 848px) {
+      .grid {
+      gap:1.5rem;
+      }
+      }
+
+      @media only screen and (max-width: 480px) {
+        .grid {
+        grid-template-columns: repeat(1,1fr)
+        }
+        }
 
 .grid-direction {
   display: flex;
@@ -607,3 +1079,14 @@ input {
   margin-top: 10rem;
 }
 
+  .responsive-faqs {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .responsive-faqs {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+    }

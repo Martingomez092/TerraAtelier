@@ -13,15 +13,13 @@
 
 <body>
 
-    <!--Navbar-->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png" alt="logoterra"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo.png" alt="logoterra"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse li-position" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
@@ -43,26 +41,44 @@
         </div>
       </nav>
 
-    <!--Parallax 1-->
+    
 
     <article >
-        <div class="section1 mb-5 parallax">
+        <div class="section1 parallax mb-5">
+          <div class="hero">
             <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-            <button class="btn-hero">Descubrí nuestros productos</button>
+            <button class="btn-hero ">Descubrí nuestros productos</button>
+          </div>      
         </div> 
-    </article>   
+    </article>    
 
-      <!--Cards-->
 
-      <section>
+
+    <section class="section-width">
       <div class="card mb-3" >
         <div class="row g-0">
-          <div class="col-md-5">
-            <img src="img/box1.jpg" alt="imageplant" class="img-fluid rounded-start">
+          <div class="col-12 col-lg-5 image-card">
+            <img src="img/box1.jpg" alt="imageplant" class="img-fluid ">
           </div>
-          <div class="col-md-7">
+          <div class="col-12 col-lg-7">
             <div class="card-body">
-                <img src="img/Group 8.svg" alt="iconplanta">
+                <img class="icon" src="img/Group 8.svg" alt="iconplanta">
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consectetur, nesciunt tempora minus suscipit aut eveniet, libero pariatur omnis, officia asperiores corrupti vel quod. At quidem fugit quod consequatur. Eaque.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="card mb-3" >
+        <div class="row g-0">
+          <div class="col-12 col-lg-5 image-card">
+            <img src="img/box1.jpg" alt="imageplant" class="img-fluid ">
+          </div>
+          <div class="col-12 col-lg-7">
+            <div class="card-body">
+              <img class="icon" src="img/mdi_seed-outline.svg" alt="iconoseed">
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consectetur, nesciunt tempora minus suscipit aut eveniet, libero pariatur omnis, officia asperiores corrupti vel quod. At quidem fugit quod consequatur. Eaque.</p>
               
             </div>
@@ -70,35 +86,21 @@
         </div>
       </div>
 
-      <div class="card mb-3" >
+      <div class="card mb-5" >
         <div class="row g-0">
-          <div class="col-md-7">
-            <img src="img/mdi_seed-outline.svg" alt="iconoseed">
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consectetur, nesciunt tempora minus suscipit aut eveniet, libero pariatur omnis, officia asperiores corrupti vel quod. At quidem fugit quod consequatur. Eaque.</p>
+          <div class="col-12 col-lg-5 image-card">
+            <img src="img/box1.jpg" alt="imageplant" class="img-fluid ">
           </div>
-          <div class="col-md-5" >
-            <div class="card-body p-0">
-                <img src="img/box1.jpg" alt="imageplant" class="img-fluid rounded-end">     
-            </div>
-          </div>
-        </div>
-      </div>
-     <div class="card mb-5" >
-        <div class="row g-0">
-          <div class="col-md-5">
-            <img src="img/box1.jpg" alt="imageplant" class="img-fluid rounded-start">
-          </div>
-          <div class="col-md-7">
+          <div class="col-12 col-lg-7">
             <div class="card-body">
-                <img src="img/Group 8.svg" alt="iconplanta">
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consectetur, nesciunt tempora minus suscipit aut eveniet, libero pariatur omnis, officia asperiores corrupti vel quod. At quidem fugit quod consequatur. Eaque.</p>  
+                <img class="icon" src="img/Group 8.svg" alt="iconplanta">
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consectetur, nesciunt tempora minus suscipit aut eveniet, libero pariatur omnis, officia asperiores corrupti vel quod. At quidem fugit quod consequatur. Eaque.</p>
+              
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <!--parallax 2-->
+    </section> 
 
     <article >
         <div class="section2 parallax">
@@ -111,17 +113,15 @@
                 </div>
             </div>
         </div> 
-    </article> 
+    </article>
 
-    <!--Footer-->
-
-    <footer>
+    <footer class="footer-responsive">
         <ul class="ul-footer">
             <li class="li-footer"><a href="index.html"> Inicio</a></li>
             <li class="li-footer"><a href="productos.html">Productos</a></li>
             <li class="li-footer"><a href="contacto.html">Contacto</a></li>
             <li class="li-footer"><a href="quienes-somos.html">Quienes Somos</a></li>
-            <li class="li-footer"><a href="faqs.html">FAQS</a></li>     
+            <li class="li-footer"><a href="faqs.html">FAQS</a></li> 
         </ul>
         <hr>
         <div class="redes">
@@ -135,8 +135,8 @@
                 <img src="img/ig.svg" alt="iconinstagram">
             </a>
         </div>
-    </footer>
+    </footer> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+</body> 
 
-</html>
+</html> 

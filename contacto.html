@@ -10,19 +10,17 @@
     <title>Terra Atelier - Contacto</title>
 </head>
 <body>
-
-     <!--Navbar-->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="logo" src="img/logo.png" alt="logoterra"></a>
+ 
+     <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5 ">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="index.html"><img class="logo" src="img/logo.png" alt="logoterra"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="collapse navbar-collapse li-position" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link " aria-current="page" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="productos.html">Productos</a>
@@ -40,10 +38,10 @@
           </div>
         </div>
       </nav>
-    <!--form-->
+    
 
-<section>
-    <div class="box-map">
+<section class="responsive-message">
+    <div class="box-map mx-0">
         <div class="inbox-left">
             <form action="">
                 <div class="inbox-name">
@@ -57,44 +55,43 @@
                 <div class="inbox-message">
                     <label for="text">Mensaje</label>
                     <textarea name="text" id="text" cols="30" rows="10"></textarea>
-                </div> 
+                </div>  
             </form>
             <div class="inbox-btn">
                 <button class="btn-inbox">Enviar Mensaje</button>
             </div>
         </div>
         <div class="inbox-right"> 
-        <p>Lorem ipsum dolor sit amet fugit omnis!</p>
+        <p class="message">Lorem ipsum dolor sit amet fugit!</p>
         <img class="img-message" src="/img/message.svg" alt="iconmessage">
         </div>
     </div>
 </section>
-    <!--Mapa-->
 
-    <section>
-        <div class="box-map">
-            <div class="box-map-left">
-                <p class="text-map-bold">Terra Atelier Tienda <br>
-                </p> 
-                <p class="text-map"> Callao 1713, Villa Madero. <br> Lun a Sab. 10:00 a 18:00 <br> Teléfono: 1122334455 <br> 
-                </p>
+    <section class="responsive-map mb-5">
+        <div class="row">
+            <div class="col-12 col-md-6 p-0">
+                <div class= "box-map-left">
+                    <p class="text-map-bold">Terra Atelier Tienda <br>
+                    </p> 
+                    <p class="text-map"> Callao 1713, Villa Madero. <br> Lun a Sab. 10:00 a 18:00 <br> Teléfono: 1122334455 <br> 
+                    </p>
+                </div>
             </div>
-            <div class="box-map-right"> 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d289.94160794339587!2d-58.503243936863996!3d-34.6972382619605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccf655d3cd089%3A0x585078f70c461c47!2sTerra%20Atelier!5e0!3m2!1sen!2sar!4v1638651493616!5m2!1sen!2sar" width="800" height="560" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
+            <div class="col-12 col-md-6 p-0">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d289.94160794339587!2d-58.503243936863996!3d-34.6972382619605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccf655d3cd089%3A0x585078f70c461c47!2sTerra%20Atelier!5e0!3m2!1sen!2sar!4v1638651493616!5m2!1sen!2sar"  style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>  
             </div>
         </div>
     </section>
     
-    <!--Footer-->
-
-    <footer>
+    <footer class="footer-responsive">
         <ul class="ul-footer">
             <li class="li-footer"><a href="index.html"> Inicio</a></li>
             <li class="li-footer"><a href="productos.html">Productos</a></li>
             <li class="li-footer"><a href="contacto.html">Contacto</a></li>
             <li class="li-footer"><a href="quienes-somos.html">Quienes Somos</a></li>
-            <li class="li-footer"><a href="faqs.html">FAQS</a></li>     
+            <li class="li-footer"><a href="faqs.html">FAQS</a></li> 
         </ul>
         <hr>
         <div class="redes">
@@ -108,7 +105,7 @@
                 <img src="img/ig.svg" alt="iconinstagram">
             </a>
         </div>
-    </footer>
+    </footer> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
