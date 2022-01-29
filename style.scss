@@ -923,6 +923,13 @@
     margin-right: 1rem;
     }
     }
+
+    @media only screen and (max-width: 1420px) {
+        .text-faqs {
+        margin-right: 1rem;
+        }
+        }
+      
   
    
   
@@ -959,6 +966,13 @@
   
     @media only screen and (max-width: 745px) {
         .responsive-quienes {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        }
+    }
+
+    @media only screen and (max-width: 745px) {
+        .responsive-faqs {
         margin-left: 2rem;
         margin-right: 2rem;
         }
@@ -1093,12 +1107,7 @@
     margin-top: 10rem;
   }
     
-    @media only screen and (max-width: 800px) {
-      .responsive-faqs {
-        margin-left: 2rem;
-        margin-right: 2rem;
-      }
-      }
+   
   
   .card-title {
     display: flex;
@@ -1209,6 +1218,16 @@
   }
   }
 
+  @media only screen and (max-width: 800px) {
+    .responsive-faqs {
+        margin: {
+            left: 2rem;
+            right: 2rem;
+        }
+    }
+}
+
+
   .box-flex-faqs {
     display: flex;
     margin: {
@@ -1250,4 +1269,3 @@
 
   $greenterra: #2ac9ad;  
   $blackterra: #131515;
-  $whiteterra: #fafafa;
