@@ -4,6 +4,8 @@
     box-sizing: border-box;
   }
   
+  @import "variables";
+
   body {
     background-color: #fff;
   }
@@ -1267,5 +1269,4 @@
     margin-right: 4rem;
   }
 
-  $greenterra: #2ac9ad;  
-  $blackterra: #131515;
+
