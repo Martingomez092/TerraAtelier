@@ -1442,6 +1442,13 @@ h3 {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .responsive-faqs {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  }
+}
+
 .box-flex-faqs {
   display: -webkit-box;
   display: -ms-flexbox;

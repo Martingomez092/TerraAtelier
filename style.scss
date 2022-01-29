@@ -979,6 +979,13 @@
         margin-right: 2rem;
         }
     }
+
+    @media only screen and (max-width: 400px) {
+      .responsive-faqs {
+      margin-left: 0rem;
+      margin-right: 0rem;
+      }
+  }
   
     @media only screen and (max-width: 563px) {
           .quienes-img {
