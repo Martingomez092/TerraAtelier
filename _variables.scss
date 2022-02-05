@@ -1,2 +1,49 @@
 $greenterra: #2ac9ad;  
 $blackterra: #131515;
+$greenterra: #2ac9ad;  
+$blackterra: #131515;
+$colores: (
+    primario: #131515,
+    secundario: #fafafa
+);
+
+@each $black in $colores {
+    .footer-#{$black} {
+        background-color: #131515;
+    }
+}
+
+@mixin sizes ($width, $height){
+    height: $height;
+    width: $width;
+}
+
+.footer-responsive {
+    @include sizes (100%, auto);
+    background-color: #131515;
+}
+
+.ul-footer {
+    @include sizes (100%, auto);
+    background-color: #fafafa;
+}
+
+.footer {
+	width:100%;
+	height:auto;
+	background-color:$blackterra;
+	text-align:center;
+	color:#fafafa;
+}
+
+.footer--redisenio1{
+	@extend .footer;
+	background-color: aquamarine;
+	color:yellow;
+}
+
+.footer--redisenio2{
+	@extend .footer;
+	background-color: brown;
+	color:yellow;
+}
