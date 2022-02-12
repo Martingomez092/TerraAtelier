@@ -43,6 +43,7 @@ section {
 
 .logo {
   margin-left: 10rem;
+  width: 10rem;
 }
 
 @media only screen and (max-width: 991px) {
@@ -127,7 +128,7 @@ h1 {
 
 .btn-hero {
   background-color: #2ac9ad;
-  padding: 1rem;
+  padding: 0.2rem;
   border-radius: 0.5rem;
   border-color: #2ac9ad;
   color: #fafafa;
@@ -212,10 +213,6 @@ background-color: #28B59C;
 
 /* card */
 
-.card-text {
-  margin:2rem
-}
-
 .box-flex {
   display: flex;
   border-width: 0.01rem;
@@ -233,9 +230,8 @@ background-color: #28B59C;
 }
 
 .icon {
-  padding-top:6rem;
-  padding-left: 2rem;
-  padding-bottom: 2rem;
+  width: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 @media only screen and (max-width: 1375px) {
@@ -258,17 +254,13 @@ background-color: #28B59C;
 }
 }
 
-@media only screen and (max-width: 1093px) {
+@media only screen and (max-width: 1379px) {
   .icon {
     display: none;
 }
 }
 
-@media only screen and (max-width: 1061px) {
-  .card-text {
-    margin:1rem;
-}
-}
+
 
 @media only screen and (min-width: 775px) and (max-width: 1061px) {
   .section-width {
@@ -289,6 +281,12 @@ background-color: #28B59C;
 @media only screen and (max-width: 410px) {
   .image-card {
     border-radius: round;
+}
+}
+
+@media only screen and (max-width: 1041px) {
+  .card-text {
+    font-size: small;
 }
 }
 
@@ -356,7 +354,7 @@ background-color: #28B59C;
 /* footer */
 
 footer {
-  background-color: #1315re15;
+  background-color: #131515;
   padding-right: 10rem;
   padding-left: 10rem;
 }
@@ -365,6 +363,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: #131515;
 }
 
 .li-footer {
@@ -714,6 +713,7 @@ div .col-6 {
 
 .box-flex-pie {
   display: flex;
+  width: 100%;
   margin-right: 10rem;
   margin-left: 10rem;
   margin-top: 1rem;
