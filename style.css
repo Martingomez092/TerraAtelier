@@ -1260,7 +1260,7 @@ h3.categoria-catalogo:hover {
   display: -ms-grid;
   display: grid;
   margin: 1rem;
-  -ms-grid-columns: (1fr)[4];
+  -ms-grid-columns: (1fr);
       grid-template-columns: repeat(4, 1fr);
   gap: 4rem;
   width: 100%;
@@ -1268,14 +1268,14 @@ h3.categoria-catalogo:hover {
 
 @media only screen and (max-width: 1672px) {
   .grid {
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: (1fr);
         grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media only screen and (max-width: 1405px) {
   .grid {
-    -ms-grid-columns: (1fr)[2];
+    -ms-grid-columns: (1fr);
         grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -1288,7 +1288,7 @@ h3.categoria-catalogo:hover {
 
 @media only screen and (max-width: 480px) {
   .grid {
-    -ms-grid-columns: (1fr)[1];
+    -ms-grid-columns: (1fr);
         grid-template-columns: repeat(1, 1fr);
   }
 }
