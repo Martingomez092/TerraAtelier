@@ -99,6 +99,11 @@ a.btn-hero:hover {
   color: #ffffff;
 }
 
+a.btn-hero:visited {
+  color: #ffffff;
+}
+
+
 a.nav-link {
   color: none;
 }
@@ -350,7 +355,7 @@ background-color: #28B59C;
 
 .box-right {
   display: flex;
-  background-color: black;
+  background-color: #131515;
   width: 50%;
   background-image: url(img/box1.jpg);
   background-size: fill no-repeat;
@@ -371,6 +376,8 @@ footer {
     flex-direction: row;
     justify-content: center;
     background-color: #131515;
+    padding-left: 0rem;
+    margin-bottom: 0rem;
 }
 
 .li-footer {
@@ -379,9 +386,9 @@ footer {
   justify-content: center;
   margin-right: 2rem;
   margin-left: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
   text-decoration: none;
   font-weight: bolder;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -396,6 +403,7 @@ li a:hover {
 footer hr {
   height: 1px;
   background-color: whitesmoke;
+  margin: 0rem;
 }
 
 @media only screen and (max-width: 992px) {
@@ -425,8 +433,8 @@ footer hr {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
 
 .icon-redes {
@@ -624,7 +632,7 @@ div .col-6 {
 
  .box-map-right { 
   display: flex;
-  background-color: black;
+  background-color: #131515;;
   width: 100%;
   background-size: fill no-repeat;
   background-position: center;
@@ -744,7 +752,7 @@ div .col-6 {
 
 .box-right-pie {
   display: flex;
-  background-color: black;
+  background-color: #131515;;
   width: 50%;
   background-image: url(img/box1.jpg);
   background-size: fill no-repeat;
@@ -838,6 +846,23 @@ margin-right: 1rem;
   background-size: cover;
 }
 
+.w-100{
+  height: 50vh;
+}
+
+@media only screen and (max-width: 800px) {
+  .w-100 {
+    height: 40vh;
+  }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .w-100 {
+      height: 30vh;
+    }
+    }
+  
+
 h3 {
 font-size: larger;
 
@@ -851,6 +876,22 @@ font-size: larger;
   }
 }
 
+.title-terra {
+  color: #131515;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: {
+      bottom: 2rem;
+  }
+}
+
+.question-terra {
+  color: #131515;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: larger;
+  margin: {
+      bottom: 1rem;
+  }
+}
 
 
 .categoria-catalogo {
@@ -925,9 +966,11 @@ font-size: larger;
 
 .text-quienes {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 100;
-  padding-top: 1rem;
+  font-weight: 80;
+  font-size: larger;
   margin-right: 4rem;
+  line-height: 2rem;
+  text-indent: 3rem;
 }
 
 
@@ -950,7 +993,7 @@ font-size: larger;
 .quienes-img {
   margin-right: 0rem;
   border-radius: 60rem;
-  width: 350px;
+  width: 250px;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -959,7 +1002,7 @@ font-size: larger;
 @media only screen and (max-width: 1200px) {
   .quienes-img {
   border-radius: 0rem;
-  width: 700px;
+  width: 500px;
   padding: 2rem;
   display: flex;
   justify-content: center;
@@ -1239,6 +1282,10 @@ font-size: larger;
 }
 }
 
+#responsive-faqs {
+    margin-bottom: 10rem;
+}
+
 @media only screen and (max-width: 800px) {
   .responsive-faqs {
       margin: {
@@ -1282,10 +1329,20 @@ font-size: larger;
 .text-faqs {
   font: {
       family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      weight: 100;
+      weight: 80;
+      size: larger;
   }
   padding-top: 1rem;
   margin-right: 4rem;
+  line-height: 2rem;
+  text-indent: 3rem;
 }
 
-
+.position-gif {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.size-gif {
+  width: 150px;
+}
