@@ -1,10 +1,17 @@
+/* FORMATEO */
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* IMPORTS */
+
 @import "_variables";
+
+
+/* ETIQUETAS */
 
 body {
   background-color: #fff;
@@ -18,7 +25,7 @@ section {
   background-color: #fff;
   }
 
-/* navbar */
+/* NAVBAR */
 
 .navbar {
   width: 100%;  
@@ -108,7 +115,7 @@ a.nav-link {
   color: none;
 }
 
-/* hero */
+/* HERO */
 
 .section1 {
   background-image: url("img/hero.webp");
@@ -223,7 +230,7 @@ background-color: #28B59C;
 }
 }
 
-/* card */
+/* CARDS */
 
 .box-flex {
   display: flex;
@@ -363,7 +370,7 @@ background-color: #28B59C;
   height: auto;
 }
 
-/* footer */
+/* FOOTER */
 
 footer {
   background-color: #131515;
@@ -444,6 +451,8 @@ footer hr {
 .section1.parallax {
     background-attachment: fixed;
 }
+
+/* MAPS E INBOX */
 
 iframe {
   width:100%; 
@@ -708,12 +717,7 @@ div .col-6 {
 }
 }
 
-
-
-
-
-
-/* parallax 2  */
+/* PARALLAX 2  */
 
 .section2 {
   background-image: url("img/hero.webp");
@@ -835,6 +839,8 @@ margin-right: 1rem;
 }
 }
 
+/* ASIDE PRODUCTOS*/
+
 aside {
   width: 20%;
 }
@@ -879,6 +885,8 @@ h3 {
 font-size: larger;
 
 }
+
+/* MARKET */
 
 .catalogo {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -962,6 +970,8 @@ h3.categoria-catalogo:hover {
     margin-right: 8rem;
     margin-bottom: 6rem;
 }
+
+/* QUIENES SOMOS */
 
 .quienes {
   display: flex;
@@ -1064,20 +1074,22 @@ h3.categoria-catalogo:hover {
         .quienes-img {
           width: 400px;
           }
-          }
+}
   
-          @media only screen and (max-width: 438px) {
-            .quienes-img {
-              width: 300px;
-              }
-            }
+  @media only screen and (max-width: 438px) {
+    .quienes-img {
+      width: 300px;
+      }
+}
 
-              @media only screen and (max-width: 378px) {
-                .quienes-img {
-                  width: 250px;
-                  }
-                }
+  @media only screen and (max-width: 378px) {
+      .quienes-img {
+        width: 250px;
+        }
+}
 
+
+                
 .grid {
   display: grid;
   margin: 1rem;
@@ -1116,6 +1128,8 @@ h3.categoria-catalogo:hover {
   display: flex;
   flex-direction: column;
 }
+
+/* CARDS MARKET */
 
 .market {
   display: flex;
